@@ -1,0 +1,298 @@
+html {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	box-sizing: border-box;
+	background: #FFFFFF;
+	overflow-x: hidden;
+	line-height: 1.6;
+    font-size: 16px;
+}
+
+body {
+	position: relative;
+	cursor: default;
+	background: radial-gradient(circle at top right, #80D2DF, #E07DC3);
+}
+
+header {
+	position:fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+.content {
+	padding-top: 50px;
+}
+
+form {
+	padding: 0.01em 16px;
+	margin: 15px 0px;
+	text-align: center;
+}
+
+input, textarea {
+	margin-bottom: 15px;
+	overflow: hidden;
+	height: 40px;
+	width: 100%;
+	padding-left: 10px;
+	display: inline-block;
+	border: none;
+	background-color: #E4EEEE;
+	border-bottom: 2px solid #EEE;
+	color: #354052;
+	opacity: 0.5;
+	-webkit-transition: 0.2s border-color, 0.2s opacity;
+	transition: 0.2s border-color, 0.2s opacity;
+}
+
+textarea {
+	height: 80px;
+}
+
+input:focus {
+	border-color: #6195FF;
+	opacity: 1;
+}
+
+button {
+	display: inline-block;
+	padding: 10px 35px;
+	margin: 3px;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	-webkit-transition: 0.2s opacity;
+	transition: 0.2s opacity;
+	background: #6195FF;
+	color: #FFF;
+	border-radius: 5px;
+}
+
+button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 30px;
+    color: #10161A;
+}
+
+p {
+	text-align: justify;
+}
+
+.insert input[name="nom"], .insert input[name="prenom"], .insert input[name="login"], .insert input[name="mail"] {
+	width: calc(50% - 5px);
+}
+
+.log input {
+	width: calc(50% - 50px);
+}
+
+.err {
+	border-bottom: 1px solid red;
+}
+
+.err:focus {
+	border-color: red;
+}
+
+.wrap {
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+h5, h6 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.disabled:hover {
+    cursor: not-allowed;
+}
+
+#bar {
+    height: 5px;
+    width: 0px;
+    background-color: #6195FF;
+}
+
+.title {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.blockquote {
+	color: #1D4851;
+}
+
+.separator {
+	border-top: 5px solid rgb(50,50,50);
+	width: 70%;
+}
+
+.icon img {
+	margin: 50px 0 30px 60px;
+	width: 50%;
+}
+
+.icon a {
+	font-weight: lighter;
+	text-decoration: none;
+	float: right;
+}
+
+.icon a:hover {
+	outline: none;
+	opacity: .6;
+}
+
+#search input {
+	margin: 0;
+	margin-left: 10%;
+	border-radius: 10px 0 0 10px;
+    float: left;
+    width: 80%;
+}
+
+#search button {
+	padding: 0;
+	margin: 0;
+	margin-right: 5%;
+	height: 40px;
+    float: right;
+    width: 5%;
+  	border-radius: 0 10px 10px 0;
+}
+
+a#cRetour {
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    right: 20px;
+ 	opacity: 1;
+ 	z-index: 99999;
+    transition: all ease-in 0.2s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+}
+
+a#cRetour:before { 
+    content: "\25b2"; 
+}
+
+a#cRetour:hover {
+    background: rgba(0, 0, 0, 1);
+    transition: all ease-in 0.2s;
+}
+
+a#cRetour.cInvisible {
+ 	bottom: -35px;
+  	opacity: 0;
+    transition: all ease-in 0.5s;
+}
+
+a#cRetour.cVisible {
+    bottom: 20px;
+    opacity: 1;
+}
+
+footer {
+	margin-top: 50px;
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+footer p {
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-left, .footer-center, .footer-right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-left {
+	width: 30%;
+	margin-right: 10%;
+}
+
+.footer-center {
+	margin-left: 5%;
+	margin-right: 10%;
+	width: 20%;
+}
+
+.footer-right {
+	width: 20%;
+}
+
+.footer-right, .footer-center {
+	text-align: center;
+}
+
+.footer-icons {
+	margin-top: 25px;
+}
+
+.footer-icons a {
+	margin-left: 5%;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-about {
+	line-height: 20px;
+	color: #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-about span {
+	display: block;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.btn-ctrl{
+	float: right;
+	margin-right: -3%; 
+	margin-top: -6.2%;
+}
+
+button[name="remove"], button[name="add"]{
+	width: 100%;
+}

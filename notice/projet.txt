@@ -1,0 +1,8 @@
+un acteur peut créer des comptes (login, mail, prenom, nom, password) identifiés par le login
+un acteur peut se connecter s'il possède un compte
+un utilisateur connecté peut créer un sondage en renseignant (titre, lieu, descriptif, un ensemble de dates, pour chaque date un ensemble d'heures)
+un sondage génère une clef unique
+n'importe quel acteur peut participer à un sondage s'il connait la clef
+il peut valider sa participation en renseignant son nom et ses disponibilités
+une validation actualise le sondage
+seul le créateur du sondage peut voir les résultats et le fermer
